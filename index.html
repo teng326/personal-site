@@ -9,55 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="solar.css" />
   </head>
   <body>
-    <header class="nav">
-      <a class="wordmark" href="#top">你的名字<span>．</span></a>
-      <a class="nav-link" href="mailto:hello@example.com">聯絡我 ↗</a>
-    </header>
-
+    <header class="nav"><a class="wordmark" href="#top">你的名字<span>．</span></a><a class="nav-link" href="mailto:hello@example.com">聯絡我 ↗</a></header>
     <main id="top">
-      <section class="hero">
-        <p class="eyebrow">HELLO, I’M</p>
-        <h1>把想法，<br />做成<span>有用的事。</span></h1>
-        <p class="intro">我是一位專注於 <strong>設計、產品與創意</strong> 的工作者。這裡記錄我正在做的事、在意的問題，以及一些值得分享的作品。</p>
-        <a class="button" href="#work">看看我的作品 <span>↓</span></a>
+      <section class="hero"><p class="eyebrow">HELLO, I’M</p><h1>把想法，<br />做成<span>有用的事。</span></h1><p class="intro">我是一位專注於 <strong>設計、產品與創意</strong> 的工作者。這裡記錄我正在做的事、在意的問題，以及一些值得分享的作品。</p><a class="button" href="#work">看看我的作品 <span>↓</span></a></section>
+      <section class="marquee" aria-label="專長"><div>DESIGN <i>✦</i> BUILD <i>✦</i> LEARN <i>✦</i> SHARE <i>✦</i> DESIGN <i>✦</i> BUILD <i>✦</i> LEARN <i>✦</i> SHARE <i>✦</i></div></section>
+      <section class="solar" id="solar">
+        <div class="solar-top"><div><p class="eyebrow">MINI TOOL / LATITUDE 24°N</p><h2>今天的太陽，<br /><em>走到哪裡了？</em></h2></div><p class="solar-note">以北緯 24° 為基準的<br />太陽高度與方位模擬。</p></div>
+        <div class="solar-card"><div class="controls"><label>日期<input id="solar-date" type="date" /></label><label>本地時間<input id="solar-time" type="time" /></label></div><div class="sky" aria-label="太陽位置圖"><div class="sun-path"></div><div class="horizon"></div><div class="sun" id="sun-dot">☼</div><span class="compass west">W</span><span class="compass east">E</span><span class="compass south">S</span></div><div class="solar-data"><div><span>太陽高度</span><strong id="altitude">--°</strong></div><div><span>太陽方位</span><strong id="azimuth">--°</strong></div><div><span>日出 / 日落</span><strong id="daylight">--:-- / --:--</strong></div></div><p class="solar-caption" id="solar-caption">調整時間，觀察太陽在北緯 24° 的位置變化。</p></div>
       </section>
-
-      <section class="marquee" aria-label="專長">
-        <div>DESIGN <i>✦</i> BUILD <i>✦</i> LEARN <i>✦</i> SHARE <i>✦</i> DESIGN <i>✦</i> BUILD <i>✦</i> LEARN <i>✦</i> SHARE <i>✦</i></div>
-      </section>
-
-      <section class="work" id="work">
-        <div class="section-head"><p class="eyebrow">SELECTED WORK</p><p>01 — 03</p></div>
-        <article class="project project-one">
-          <div class="project-number">01</div>
-          <div><p class="project-type">PROJECT / 2026</p><h2>第一個精彩專案</h2><p>用一句話介紹這個作品解決了什麼問題，或留下了什麼影響。</p></div>
-          <span class="arrow">↗</span>
-        </article>
-        <article class="project project-two">
-          <div class="project-number">02</div>
-          <div><p class="project-type">EXPERIMENT / 2025</p><h2>持續進行的實驗</h2><p>保留一個位置，放你最近最想分享的探索與學習。</p></div>
-          <span class="arrow">↗</span>
-        </article>
-        <article class="project project-three">
-          <div class="project-number">03</div>
-          <div><p class="project-type">WRITING / 2025</p><h2>一段值得閱讀的文字</h2><p>可以是文章、筆記、演講，或任何你希望被看見的觀點。</p></div>
-          <span class="arrow">↗</span>
-        </article>
-      </section>
-
-      <section class="about">
-        <p class="eyebrow">A LITTLE MORE</p>
-        <div><h2>好奇心是我最可靠的方向感。</h2><p>我相信好的工作不只是完成任務，而是留下讓人願意再次靠近的體驗。工作以外，我喜歡閱讀、散步，以及把零碎想法整理成新的可能。</p></div>
-      </section>
-
-      <section class="contact">
-        <p class="eyebrow">SAY HELLO</p>
-        <h2>一起做點<br /><em>有意思的事。</em></h2>
-        <a href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
-      </section>
+      <section class="work" id="work"><div class="section-head"><p class="eyebrow">SELECTED WORK</p><p>01 — 03</p></div><article class="project project-one"><div class="project-number">01</div><div><p class="project-type">PROJECT / 2026</p><h2>第一個精彩專案</h2><p>用一句話介紹這個作品解決了什麼問題，或留下了什麼影響。</p></div><span class="arrow">↗</span></article><article class="project project-two"><div class="project-number">02</div><div><p class="project-type">EXPERIMENT / 2025</p><h2>持續進行的實驗</h2><p>保留一個位置，放你最近最想分享的探索與學習。</p></div><span class="arrow">↗</span></article><article class="project project-three"><div class="project-number">03</div><div><p class="project-type">WRITING / 2025</p><h2>一段值得閱讀的文字</h2><p>可以是文章、筆記、演講，或任何你希望被看見的觀點。</p></div><span class="arrow">↗</span></article></section>
+      <section class="about"><p class="eyebrow">A LITTLE MORE</p><div><h2>好奇心是我最可靠的方向感。</h2><p>我相信好的工作不只是完成任務，而是留下讓人願意再次靠近的體驗。工作以外，我喜歡閱讀、散步，以及把零碎想法整理成新的可能。</p></div></section>
+      <section class="contact"><p class="eyebrow">SAY HELLO</p><h2>一起做點<br /><em>有意思的事。</em></h2><a href="mailto:hello@example.com">hello@example.com <span>↗</span></a></section>
     </main>
-    <footer><span>© 2026 你的名字</span><span>MADE WITH CARE</span></footer>
+    <footer><span>© 2026 你的名字</span><span>MADE WITH CARE</span></footer><script src="solar.js"></script>
   </body>
 </html>
